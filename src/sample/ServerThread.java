@@ -6,6 +6,16 @@ import java.util.concurrent.TimeUnit;
 
 public class ServerThread extends Thread {
 
+    private final int redLed;
+    private final int greenLed;
+    private final int blueLed;
+
+    public ServerThread(int redLed, int greenLed, int blueLed) {
+        this.redLed = redLed;
+        this.greenLed = greenLed;
+        this.blueLed = blueLed;
+    }
+
 
     public void run()
     {
@@ -13,6 +23,7 @@ public class ServerThread extends Thread {
         try
         {
             server = new Server(1919);
+
 
         }
         catch (Exception e)
@@ -31,19 +42,21 @@ public class ServerThread extends Thread {
         }
     }
 
-    public String getRandomColor() {
+    public Color getRandomColor() {
         Random r = new Random();
         float H= r.nextFloat();
         float S=0.99f;
         float B=0.99f;
         Color color = new Color(Color.HSBtoRGB(H,S,B));
-        String hex =  String.format("%02x%02x%02x", color.getRed(), color.getGreen(), color.getBlue());
-        return hex;
+        return color;
     }
 
     public void Turf() {
-        String color = getRandomColor();
-        Main.root.setStyle("-fx-background-color: #" + color);
+        Color color = getRandomColor();
+        try {
+
+        } catch (Exception e) {
+        }
     }
 
     public void Spies() {

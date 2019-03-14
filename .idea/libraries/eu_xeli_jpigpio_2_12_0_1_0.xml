@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="eu.xeli:jpigpio_2.12:0.1.0" type="repository">
+    <properties maven-id="eu.xeli:jpigpio_2.12:0.1.0" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/eu/xeli/jpigpio_2.12/0.1.0/jpigpio_2.12-0.1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

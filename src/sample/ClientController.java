@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 public class ClientController {
-
     @FXML
     Button Spies;
 
@@ -15,7 +14,7 @@ public class ClientController {
 
     @FXML
     public void initialize() {
-        clientThread = new ClientThread();
+        clientThread = new ClientThread("192.168.0.104");
         clientThread.start();
 
     }

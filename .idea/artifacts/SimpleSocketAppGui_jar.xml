@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SimpleSocketAppGui:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SimpleSocketAppGui_jar</output-path>
+    <root id="archive" name="SimpleSocketAppGui.jar">
+      <element id="module-output" name="SimpleSocketAppGui" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/xeli/jpigpio_2.12/0.1.0/jpigpio_2.12-0.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.jar" path-in-jar="/" />
+      <element id="library" level="project" name="eu.xeli:jpigpio_2.12:0.1.0" />
+    </root>
+  </artifact>
+</component>

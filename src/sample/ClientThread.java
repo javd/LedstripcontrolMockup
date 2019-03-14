@@ -1,13 +1,13 @@
 package sample;
 
-import java.awt.*;
-import java.io.DataInputStream;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-
 public class ClientThread extends Thread {
 
     Client client=null;
+    String ip;
+
+    public ClientThread(String ip) {
+        this.ip = ip;
+    }
 
     public void run()
     {
@@ -15,7 +15,7 @@ public class ClientThread extends Thread {
         try
             {
                 System.out.println("Creating Client...");
-                client = new Client(1919);
+                client = new Client(1919, ip);
                 System.out.println("Client created");
 
 
